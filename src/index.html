@@ -11,15 +11,16 @@
     <div class="container" ng-controller="AppCtrl">
         <div class="clearfix">
 
-
-
-            <pdf-viewer delegate-handle="my-pdf-container"
-               
-                        b64="b64Data"
-                        scale="1"
-                        show-toolbar="true"
-                        headers="{'x-you-know-whats-awesome': 'EVERYTHING'}"></pdf-viewer>
-
+            <!--<div class="dragscroll" style="width: 320px; height: 160px; overflow: scroll; cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">
+                <img src="http://qnimate.com/wp-content/uploads/2014/09/header-scroll-effect.jpg" />
+            </div>-->
+            <div>
+                <pdf-viewer delegate-handle="my-pdf-container"
+                            b64="b64Data"
+                            scale="1"
+                            show-toolbar="true"
+                            headers="{'x-you-know-whats-awesome': 'EVERYTHING'}"></pdf-viewer>
+            </div>
 
             <footer class="py4">
                 <div class="sm-table">
@@ -40,6 +41,7 @@
         </div>
     </div>
 
+
     <script src="lib/pdfjs-dist/build/pdf.combined.js"></script>
     <script src="lib/angular/angular.js"></script>
     <!--<script src="/dist/angular-pdf-viewer.min.js"></script>-->
@@ -50,6 +52,7 @@
     <script src="js/pdf-ctrl.js"></script>
     <script src="js/pdf-viewer.js"></script>
     <script src="js/pdf-viewer-toolbar.js"></script>
+    <script src="js/dragscroll.js"></script>
     <script src="test-app.js"></script>
 </body>
 </html>
