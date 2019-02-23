@@ -13,11 +13,11 @@ gulp.task('build', function () {
         .pipe(uglify())
         .pipe(gulp.dest('./dist/'));
 
-    gulp.src([
-        './src/css/*.css'
-    ]).pipe(concat('angular-pdf-viewer.min.css'))
-        .pipe(minifycss())
-        .pipe(gulp.dest('./dist/css'));
+    //gulp.src([
+    //    './src/css/*.css'
+    //]).pipe(concat('angular-pdf-viewer.min.css'))
+    //    .pipe(minifycss())
+    //    .pipe(gulp.dest('./dist/css'));
     //gulp.src([
     //    './src/js/styles.css',
     //]).pipe(concat('angular-pdf-styles.min.css'))
