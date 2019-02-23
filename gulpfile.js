@@ -8,28 +8,24 @@ var minifycss = require('gulp-minify-css');
 
 gulp.task('build', function () {
     gulp.src([
-        './src/js/*.js'
-    ]).pipe(concat('angular-pdf-viewer.min.js'))
+        './src/js/dragscroll.js',
+        './src/js/delegate-service.js',
+        './src/js/pdf-viewer-delegate.js',
+        './src/js/pdf-ctrl.js',
+        './src/js/pdf-viewer-toolbar.js',
+        './src/js/pdf-viewer.js'
+        
+    ])
+        .pipe(concat('angular-pdf-viewer.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./dist/'));
 
-    //gulp.src([
-    //    './src/css/*.css'
-    //]).pipe(concat('angular-pdf-viewer.min.css'))
-    //    .pipe(minifycss())
-    //    .pipe(gulp.dest('./dist/css'));
-    //gulp.src([
-    //    './src/js/styles.css',
-    //]).pipe(concat('angular-pdf-styles.min.css'))
-    //    .pipe(uglify())
-    //    .pipe(minifycss())
-    //    //.pipe(csso())
-    //    .pipe(gulp.dest('./dist/'));
-    //gulp.src([
-    //    './src/css/basscss.css'
-    //]).pipe(concat('angular-pdf-viewer.min.css'))
-    //    .pipe(uglify())
-    //    .pipe(gulp.dest('./dist/'));
+    gulp.src([
+        './src/css/basscss.css'
+    ])
+        .pipe(concat('angular-pdf-viewer.min.css'))
+        .pipe(minifycss())
+        .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('dev', function () {

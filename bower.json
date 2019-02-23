@@ -2,7 +2,7 @@
   "name": "angular-pdf-viewer",
   "version": "0.2.17",
   "description": "An AngularJS directive to display PDFs",
-  "main": "./dist/angular-pdf-viewer.min.js",
+  "main": "[./dist/angular-pdf-viewer.min.js, ./dist/css/angular-pdf-viewer.min.css]",
   "license": "MIT",
   "homepage": "http://github.com/winkerVSbecks/angular-pdf-viewer",
   "dependencies": {
