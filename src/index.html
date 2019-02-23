@@ -9,14 +9,13 @@
 <body ng-app="testApp">
 
     <div class="container" ng-controller="AppCtrl">
-        <div class="">
+        <div class="clearfix">
 
 
 
             <pdf-viewer delegate-handle="my-pdf-container"
-                        url="pdfUrl"
+               
                         b64="b64Data"
-                        fromB64="true"
                         scale="1"
                         show-toolbar="true"
                         headers="{'x-you-know-whats-awesome': 'EVERYTHING'}"></pdf-viewer>

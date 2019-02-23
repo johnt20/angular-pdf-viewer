@@ -28,8 +28,8 @@ angular.module('pdf')
               'class="button py2 m0 button-nav-dark">Rotate' +
             '</a>' +
             '<span class="px1">Page</span> ' +
-            '<input type="text" class="field-dark" ' +
-              'min=1 ng-model="currentPage" ng-change="goToPage()" ' +
+            '<input type="number" class="field-dark" ' +
+              'min="1" max="{{pageCount}}" steep="1" ng-model="currentPage" ng-change="goToPage()" ' +
                'style="width: 10%"> ' +
             ' / {{pageCount}}' +
           '</div>' +
