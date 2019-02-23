@@ -28,7 +28,7 @@ angular.module('testApp', ['pdf']).controller('AppCtrl', ['$scope', 'pdfDelegate
     const blob = b64toBlob(b64Data, contentType);
     const blobUrl = URL.createObjectURL(blob);
 
-    const img = document.createElement('pdf');
+    //const img = document.createElement('pdf');
     //img.src = blobUrl;
    
     $scope.pdfUrl = blobUrl;
@@ -36,6 +36,17 @@ angular.module('testApp', ['pdf']).controller('AppCtrl', ['$scope', 'pdfDelegate
     $scope.loadNewFile = function (url) {
         pdfDelegate
             .$getByHandle('my-pdf-container')
-            .load(url);
+            //.load(url);
     };
+
+
+
+    //$scope.pdfUrl = 'pdf/material-design.pdf';
+
+    //$scope.loadNewFile = function (url) {
+    //    pdfDelegate
+    //        .$getByHandle('my-pdf-container')
+    //        .load(url);
+    //};
+
 }]);
