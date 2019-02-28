@@ -6,32 +6,32 @@ angular.module('pdf')
                 restrict: 'E',
                 template:
                     '<div class="clearfix mb2 white bg-blue">' +
-                    '<div class="left">' +
-                    '<a href=""' +
+                    '<div class="panel-head">' +
+                    '<a title="Back" href=""' +
                     'ng-click="prev()"' +
-                    'class="button py2 m0 button-nav-dark">Back' +
+                    'class="button py2 m0 button-nav-dark">  <i class="fa fa-backward"></i>' +
                     '</a>' +
-                    '<a href=""' +
+                    '<a  title="Next" href=""' +
                     'ng-click="next()"' +
-                    'class="button py2 m0 button-nav-dark">Next' +
+                    'class="button py2 m0 button-nav-dark">  <i class="fa fa-forward"></i>' +
                     '</a>' +
-                    '<a href=""' +
+                    '<a  title="Zoom In" href=""' +
                     'ng-click="zoomIn()"' +
-                    'class="button py2 m0 button-nav-dark">Zoom In' +
+                    'class="button py2 m0 button-nav-dark"> <i class="fa fa-search-plus"></i>' +
                     '</a>' +
-                    '<a href=""' +
+                    '<a title="Zoom Out" href=""' +
                     'ng-click="zoomOut()"' +
-                    'class="button py2 m0 button-nav-dark">Zoom Out' +
+                    'class="button py2 m0 button-nav-dark"><i class="fa fa-search-minus"></i>' +
                     '</a>' +
-                    '<a href=""' +
+                    '<a title="Rotate left" href=""' +
                     'ng-click="rotate()"' +
-                    'class="button py2 m0 button-nav-dark">Rotate' +
+                    'class="button py2 m0 button-nav-dark"><i class="icon-flipped fa fa-undo"></i>' +
                     '</a>' +
-                    '<span class="px1">Page</span> ' +
+                    '<span class="px1 button-nav-dark">Page</span> ' +
                     '<input type="number" style="width: 63px; padding-left: 10px !important;" class="field-dark" ' +
                     'min="1" max="{{pageCount}}" steep="1" ng-model="currentPage" ng-change="goToPage()" ' +
                     'style="width: 10%"> ' +
-                    ' / {{pageCount}}' +
+                    '<span class="px1 button-nav-dark">/ {{pageCount}}</span> ' +
                     '</div>' +
                     '</div>',
                 scope: { pageCount: '=' },
