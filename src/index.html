@@ -17,7 +17,10 @@
             <!--<div class="dragscroll" style="width: 320px; height: 160px; overflow: scroll; cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">
                 <img src="http://qnimate.com/wp-content/uploads/2014/09/header-scroll-effect.jpg" />
             </div>-->
-            <div>
+            <button type="button" ng-click="view()" class="btn btn-primary btn-sm">
+                view&nbsp;<i class="icon-user fa fa-search"></i>
+            </button>
+            <div ng-if="b64Data">
                 <pdf-viewer delegate-handle="my-pdf-container"
                             b64="b64Data"
                             scale="1"
