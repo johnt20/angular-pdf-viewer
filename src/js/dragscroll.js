@@ -80,7 +80,6 @@
         }
     }
 
-    debugger;
     if (_document.readyState == 'complete') {
         reset();
     } else {
