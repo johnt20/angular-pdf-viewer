@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\dist",
+    "\\dist\\css",
     "\\src",
     "\\src\\css",
     "\\src\\js"
   ],
-  "SelectedNode": "\\src\\js\\pdf-viewer.js",
+  "SelectedNode": "\\src\\js\\pdf-ctrl.js",
   "PreviewInSolutionExplorer": false
 }
